@@ -1,11 +1,12 @@
 {
-  "name": "html",
-  "version": "1.0.0",
+  "name": "@ssweet/html",
+  "version": "2.0.0",
   "description": "HTML pretty printer CLI utility (based on jsbeautifier)",
   "author": "Max Ogden <max@maxogden.com> (http://maxogden.com)",
   "contributors": [
     "Nochum Sossonko <nsossonko@hotmail.com>",
-    "Einar Lielmanis <elfz@laacz.lv>"
+    "Einar Lielmanis <elfz@laacz.lv>",
+    "Shaun Sweet <shaun@shaunsweet.com"
   ],
   "keywords": [
     "html",
@@ -19,16 +20,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/maxogden/commonjs-html-prettyprinter.git"
+    "url": "https://github.com/shaun-sweet/commonjs-html-prettyprinter"
   },
   "bin": {
     "html": "./bin/html.js"
   },
   "main": "lib/html.js",
   "bugs": {
-    "url": "https://github.com/maxogden/commonjs-html-prettyprinter/issues"
+    "url": "https://github.com/shaun-sweet/commonjs-html-prettyprinterissues"
   },
-  "homepage": "https://github.com/maxogden/commonjs-html-prettyprinter",
+  "homepage": "https://github.com/shaun-sweet/commonjs-html-prettyprinter",
   "dependencies": {
     "concat-stream": "^1.4.7"
   },
