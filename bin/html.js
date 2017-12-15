@@ -14,14 +14,14 @@ else readStdin()
 
 function readStdin() {
   var stdin = process.openStdin()
-  stdin.pipe(concat(function concatted (buff) {
-    process.stdout.write(html.prettyPrint(buff.toString(), {indent_size: 2}))
+  stdin.pipe(concat(function concatted(buff) {
+    process.stdout.write(html.prettyPrint(buff.toString(), { indent_size: 2 }))
   }))
 }
 
 function processFiles(files) {
   if (files.length > 1) {
-    files.map(function(filename) {
+    files.map(function (filename) {
       prettifyFile(filename)
     })
     return
@@ -31,7 +31,10 @@ function processFiles(files) {
 }
 
 function prettify(str) {
-  return html.prettyPrint(str, {indent_size: 2})
+  return html.prettyPrint(str, {
+    indent_size: 2,
+    indent_scripts: 'keep'
+  })
 }
 
 function prettifyFile(filename) {
