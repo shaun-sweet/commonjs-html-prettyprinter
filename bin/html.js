@@ -9,7 +9,6 @@ var args = process.argv.slice(0)
 args.shift()
 args.shift()
 
-console.log(args[0])
 if (args.length > 0) processFiles(args)
 else prettifyFile(args[0])
 
@@ -21,7 +20,7 @@ function readStdin() {
 }
 
 function processFiles(files) {
-  if (files.length > 1) {
+  if (files.length >= 1) {
     files.map(function (filename) {
       prettifyFile(filename)
     })
